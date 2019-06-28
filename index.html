@@ -52,9 +52,13 @@ body, html {
 }
 
 .logo{
+  display: flex;
   content: url("logo.png");
   height: 41px;
   width: 228px;
+  vertical-align: middle;
+  margin-top: 10px;
+  
 }
 
 
@@ -129,7 +133,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-	<div class="image logo w3-left"></div>
+	<div class="logo w3-left"></div>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>CONTACT</a>
