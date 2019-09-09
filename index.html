@@ -125,9 +125,21 @@ body, html {
 	background-color: blue;
 }
 
+.orangebackground{
+	background-color: orange;
+}
+
+.blackbackground{
+	background-color: black;
+}
+
 .leftrightpadding{
-	padding-left: 32px;
-	padding-right: 32px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.paddingbottom{
+	padding-bottom: 80px;
 }
 
 
@@ -139,7 +151,8 @@ body, html {
 	<div class="logo w3-left"></div>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>CONTACT</a>
+      <!-- <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>BUY NOW</a> -->
+	  <a href='https://www.google.com' class="w3-bar-item w3-button">BUY NOW</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -181,33 +194,34 @@ body, html {
 
 
 <!-- Icons Section -->
-<div class="w3-container w3-white">
-<div class="w3-container" style="padding:0px 16px" id="about">
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-rest">
-	<img src="icons/pi.svg" alt="pi" title="pi" width="250px" height="50px">
-	<i class="fab fa-raspberry-pi fa-7x"></i>
-      <p class="w3-large"><b>Raspberry Pi</b></p>
-	   <p style="color:#808080";>Desktop App powered by Pi board</font></p>
-    </div><br><br>
-    <div class="w3-rest">
-      <i class="fab fa-connectdevelop fa-7x"></i>
-      <p class="w3-large"><b>IoT Device</b></p>  
-	  <p style="color:#808080";>Connected to various API's that provides you with relevant day-to-day information</font></p>
-    </div><br><br>
-    <div class="w3-rest">
-      <i class="fas fa-chalkboard-teacher fa-7x"></i>
-      <p class="w3-large"><b>Simple Design</b></p>      
-	   <p style="color:#808080";>Built with simplicity in mind and reduced clutter</font></p>
-    </div><br><br>
+<div class="w3-container w3-center" style="padding:0px 16px;margin-top:100px">
+    <div class="w3-half paddingbottom leftrightpadding">
+		<img src="icons/pi.svg" alt="pi" title="pi" width="80px" height="80px">
+		<p class="w3-large"><b>Raspberry Pi</b></p>
+		<p style="color:#808080";>Desktop App powered by Pi board.</font></p>
+		
     </div>
-  </div>
-</div>
+	<div class="w3-half paddingbottom leftrightpadding">
+		<img src="icons/api.svg" alt="api" title="api" width="80px" height="80px">
+		<p class="w3-large"><b>IoT Device</b></p>  
+		<p style="color:#808080";>Connected to API's that displays relevant day-to-day information.</font></p>
+	</div><br><br>
+	<div class="w3-half paddingbottom leftrightpadding">
+		<img src="icons/sketch.svg" alt="design" title="design" width="80px" height="80px">
+		<p class="w3-large"><b>Simple Design</b></p>      
+		<p style="color:#808080";>Built with simplicity in mind without compromising quality.</font></p>
+	</div>	
+	<div class="w3-half paddingbottom leftrightpadding">
+		<img src="icons/credit-card.svg" alt="shop" title="shop" width="80px" height="80px">
+		<p class="w3-large"><b>Secure Shopping</b></p>      
+		<p style="color:#808080";>Peace of mind shopping through Etsy's reliable website.</font></p>
+	</div>
+</div><br><br>
 
 
 
-<!-- Team Section -->
-<div class="w3-container w3-black hero-image2" style="padding: 48px 0px 0px" id="team">
+<!-- Photo No.2 -->
+<!-- <div class="w3-container w3-black hero-image2" style="padding: 48px 0px 0px" id="team"> -->
 	<div class="w3-xxlarge w3-center"><b>Everything you need in one place</b></div><br>
 	<div class="w3-row-padding w3-grayscale" style="margin-top:64px">
 		<div class="w3-col l3 m6 w3-margin-bottom">
@@ -216,46 +230,20 @@ body, html {
   </div>
   
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
 
 
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:48px 16px" id="contact">
-  <h3 class="w3-center">Let's get in touch</h3>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Sacramento, CA US</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mountaindriftwoods@gmail.com</p>
-    <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  </div>
-</div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <div class="w3-xlarge w3-section">
-	<div class="w3-small w3-left">&copy 2019 Mountain Driftwoods</p>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  </div>
-</footer>
+<div class="w3-container w3-center w3-dark-gray w3-padding-64" >
+
+<!-- style="padding-left:80px;padding-right:80px;padding-top:80px">	 -->
+
+	<img src="icons/Dlogo.png" alt="shop" title="shop" width="8%" height="20%" style="max-width=10%">
+	<div class="w3-small w3-left">&copy 2019 Mountain Driftwoods</div>
+	<i class="fab fa-pinterest-square fa-2x"></i>
+	<i class="fab fa-instagram fa-2x"></i>
+</div>
+ 
  
 <script>
 // Modal Image Gallery
@@ -282,10 +270,6 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
-</script>
-
-<script>
-
 </script>
 
 </body>
